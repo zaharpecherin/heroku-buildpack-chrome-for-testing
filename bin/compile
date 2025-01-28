@@ -80,7 +80,7 @@ echo "export PATH=\$HOME/.chrome-for-testing/chrome-headless-shell-linux64:\$HOM
 
 # Verify the executables are actually present
 export PATH="$BUILD_DIR/.chrome-for-testing/chrome-headless-shell-linux64:$BUILD_DIR/.chrome-for-testing/chromedriver-linux64:$PATH"
-which chrome | indent
+# which chrome-headless-shell | indent
 which chromedriver | indent
 
 echo "Installed Chrome for Testing $CHANNEL version $VERSION" | indent
